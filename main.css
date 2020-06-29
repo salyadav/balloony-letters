@@ -1,4 +1,4 @@
-body {
+.balloony-body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,17 +9,18 @@ body {
     width: 100%;
     height: 100%; 
     user-select: none;
+    line-height: 40px;
     /* might have to remove the overflow attribute */
     overflow: hidden; 
     /* overflow-x: hidden; */
 }
 
-.navigation {
+.balloony-navigation {
     flex: 1;
     /* visibility: hidden; */
 }
 
-.navigation-button {
+.balloony-navigation-button {
     background-color: #000;
     color: #fff;
     font-size: 40px;
@@ -30,7 +31,7 @@ body {
     border-radius: 50%;
 }
 
-.navigation-button:hover {
+.balloony-navigation-button:hover {
     background-color: #fff;
     color: #000;
     border-style: solid;
@@ -39,22 +40,23 @@ body {
     user-select: none;
 }
 
-.pages {
+.balloony-pages {
     flex: 3;
 }
 
-.title {
+.balloony-title {
     font-family: 'Liu Jian Mao Cao', cursive;
     font-size: 60px;
+    line-height: 65px;
 }
 
-.narration {
+.balloony-narration {
     font-family: 'Amatic SC', cursive;
     font-size: 40px;
     text-align: center;
 }
 
-#slug-letter-text {
+#balloony-slug-letter-text {
     position: relative;
     font-family: 'Dancing Script', cursive;
     /* font-size: 20px; */
@@ -65,23 +67,23 @@ body {
     text-align: left;
 }
 
-.pop {
+.balloony-pop {
     font-weight: bold; 
     padding: 20px;
 }
 
-.pichk {
+.balloony-pichk {
     font-weight: bold; 
     font-size: 50px;
 }
 
-.crow-letter {
+.balloony-crow-letter {
     transition: 0.6s;
     transform-style: preserve-3d;
     position: relative;
 }
 
-#crow-letter-text {
+#balloony-crow-letter-text {
     position: relative;
     font-family: 'Shadows Into Light', cursive;  
     /* font-size: 20px; */
@@ -91,7 +93,7 @@ body {
     padding: 40px;
 }
 
-#crow-letter-text::before {
+#balloony-crow-letter-text::before {
     content:"";
     position: absolute;
     bottom: -2px;
@@ -103,26 +105,26 @@ body {
     border-radius: 5px 0 0 0;
 }
 
-#crow-letter-text:hover {
+#cballoony-row-letter-text:hover {
     border-color: #ffffff;
     background-color: #f1f1f1;
 }
 
-#crow-letter-text:hover::before {
+#balloony-crow-letter-text:hover::before {
     border-width: 130px 130px 0 0;
     border-color: #c3c3cc #fff;
     border-radius: 5px 0 0 0;
 }
 
-#crow-letter-text-front {
+#balloony-crow-letter-text-front {
     display: block;
 }
 
-#crow-letter-text-back {
+#balloony-crow-letter-text-back {
     display: none;
 }
 
-img {
+.balloony-img {
     width: 50%;
     height: auto;
 }
